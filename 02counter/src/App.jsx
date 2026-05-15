@@ -12,10 +12,11 @@ function App() {
   
   const addvalue = () => {
     //console.log("Clicked add ",counter )
-    if (counter >= 20) {
-      console.log("Not valid above 20");
-    } else {
+    if (counter <= 20) {
       counter = counter + 1;
+    } else {
+      console.log("Not valid above 20");
+
     }
     chaiCounter(counter)
   }
