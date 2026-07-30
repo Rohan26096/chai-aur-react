@@ -10,6 +10,7 @@ function App() {
   const addvalue = () => {
     if(counter<20){
       setCounter(counter+1)
+      //setCounter(prevCounter => prevCounter + 1)
     }
   }
   const removevalue= () => {
@@ -21,9 +22,10 @@ function App() {
     <>
       <h1>Chai</h1>
       <h2>Counter value: {counter}</h2>
-      <button onClick={addvalue}>Add Value</button>
+      <button onClick={addvalue}>Add Value {counter} </button>
       <br/>
-      <button onClick={removevalue}>Remove value </button>
+      <button onClick={removevalue}>Remove value {counter} </button>
+      <p>Footer: {counter}</p>
     </>
   )
 }
